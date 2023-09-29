@@ -1,5 +1,5 @@
-from MS.kvidea.store import Store
-from MS.kvidea.store import MESSAGES
+from store import Store
+from constants import MESSAGES
 import pprint
 import uuid
 
@@ -24,8 +24,8 @@ class Base:
 
     def createUser(self, document: dict, userKey: str):
         """
-        Document = słownik z danymi użytkownika
-        Key = klucz, którym identyfikowany będzie użytkownik
+        Document = dictionary with information about user
+        Key = indetifies user 
         """
         self.store = Store()
         result = self.store.load()
