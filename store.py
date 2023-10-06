@@ -1,6 +1,6 @@
 import uuid
 import json
-from MS.kvidea.constants import MESSAGES
+from constants import MESSAGES
 
 
 class Store:
